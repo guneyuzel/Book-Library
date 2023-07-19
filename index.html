@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Library</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="header-left">
+          <img src="Icons/book_icon.png" alt="book-icon" />
+          <h2 style="color: white">My Library</h2>
+        </div>
+        <img
+          src="Icons/add_icon.png"
+          alt="plus-button"
+          id="add-button"
+          onclick="openForm()"
+        />
+        <div class="form-popup" id="myForm">
+          <form class="form-container">
+            <h1>Add a Book</h1>
+
+            <label for="title"><b>Title</b></label>
+            <input type="text" name="title" id="title" required />
+
+            <label for="author"><b>Author</b></label>
+            <input type="text" name="author" id="author" required />
+
+            <label for="pages"><b>Pages</b></label>
+            <input type="number" name="pages" id="pages" required />
+
+            <button type="submit" class="btn" onclick="closeForm()">Add</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">
+              Cancel
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="cards"></div>
+    </div>
+  </body>
+</html>
