@@ -61,6 +61,7 @@ body {
   height: 30px;
   width: 30px;
   align-self: flex-end;
+  cursor: pointer;
 }
 
 .cards > div > img:hover {
@@ -70,6 +71,7 @@ body {
   padding: 0;
   margin: 0;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .cards > div > h2 {
@@ -77,11 +79,17 @@ body {
   padding: 0;
 }
 
+#add-button {
+    cursor: pointer;
+    padding: 0;
+}
+
 #add-button:hover {
   background-color: rgb(126, 126, 126);
   padding: 0;
   margin: 0;
   border-radius: 2em;
+  cursor: pointer;
 }
 
 .form-popup {
